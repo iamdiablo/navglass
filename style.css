@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 600;
+  font-size: 2.5rem;
+}
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ul li {
+  margin-left: 4rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  list-style: none;
+}
+body {
+  background: url(Img/WallAbs3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+hr {
+  width: 27.5rem;
+  margin: auto;
+  border: 1px solid white;
+}
+.navawal {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navtoggle {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  border-top: 0.2rem solid
+    rgba(255, 255, 255, 0.5);
+  border-left: 0.2rem solid
+    rgba(255, 255, 255, 0.5);
+  border-right: 0.2rem solid
+    rgba(255, 255, 255, 0.25);
+  border-bottom: 0.2rem solid
+    rgba(255, 255, 255, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  box-shadow: 0 0 2.5rem -1rem rgba(0, 0, 0, 1);
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.navtoggle div {
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 0.15rem;
+  background-color: white;
+  margin: 0.25rem auto;
+}
+.navakhir {
+  position: relative;
+  z-index: -999;
+  width: 100%;
+  height: 25rem;
+  border-radius: 5rem;
+  border-top: 0.3rem solid
+    rgba(255, 255, 255, 0.5);
+  border-left: 0.3rem solid
+    rgba(255, 255, 255, 0.5);
+  border-right: 0.3rem solid
+    rgba(255, 255, 255, 0.25);
+  border-bottom: 0.3rem solid
+    rgba(255, 255, 255, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  box-shadow: 0 0 2.5rem -1rem rgba(0, 0, 0, 1);
+  backdrop-filter: blur(2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.show {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.5s;
+}
+.h3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav {
+    display: none;
+  }
+  .h3 {
+    display: block;
+    text-align: center;
+    font-size: 10rem;
+  }
+}
